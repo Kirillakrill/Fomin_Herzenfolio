@@ -1,0 +1,89 @@
+@import "../mixins/media";
+
+.main-header {
+  background-color: $var4;
+  padding-bottom: 1rem;
+  @include lg {
+    width: 62rem;
+  }
+  &-logo:hover, &-logo:focus {
+    color: $var5;
+  }
+  &-logo:active {
+    color: $var6;
+  }
+  &-logo {
+    color: $var3;
+    font-size: 1.5625rem;
+    font-weight: 400;
+    line-height: 1.8125rem;
+    cursor: pointer;
+  }
+}
+.main-navigation {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  padding-top: 1rem;
+  width: 58.75rem;
+  margin: 0 auto;
+  align-items: end;
+}
+.site-navigation {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0;
+  @include xs {
+    position: absolute;
+    width: 0.0625rem;
+    height: 0.0625rem;
+    margin: -0.0625rem;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+.nav-link:hover, .nav-link:focus {
+  color: $var5;
+}
+.nav-link:active {
+  color: $var6;
+}
+.nav-link {
+  color: $var3;
+  font-size: 1.5625rem;
+  font-weight: 400;
+  @include xs {
+    font-size: 2.5rem;
+  }
+}
+.active-nav-link {
+  color: $var6;
+}
+.header-title:hover, .header-title:focus {
+  color: $var5;
+}
+.header-title:active {
+  color: $var6;
+}
+.header-title {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.125rem;
+  line-height: 3.5625rem;
+  text-align: center;
+  color: $var3;
+  width: 17.1875rem;
+  margin: 6.3125rem auto 6.5rem;
+  @include xs {
+    width: 35rem;
+    font-size: 5.3rem;
+  }
+  &-link {
+    margin-bottom: 6rem;
+  }
+}

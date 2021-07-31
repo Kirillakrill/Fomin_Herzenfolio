@@ -6,11 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "homepage": "http://Kirillakrill.github.io/Fomin_Herzenfolio",
+  "deploy": "npm run build&&gh-pages -d build",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.5",
+    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-html-bem-validator": "^1.0.5",
     "gulp-plumber": "^1.2.1",

@@ -1,0 +1,61 @@
+@import "../mixins/media";
+
+.main-footer {
+  display: flex;
+  align-items: center;
+  background-color: $var4;
+  min-height: 13.125rem;
+  border: 1px solid red;
+  @include lg {
+    width: 992px;
+  }
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 58.75rem;
+  margin: 0 auto;
+}
+.contact-container {
+  width: 12.0625rem;
+  min-height: 3.1875rem;
+  margin: 0;
+}
+.author-name {
+  font-family: Arial, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3125rem;
+  line-height: 1.5rem;
+  color: $var2;
+}
+.rights {
+  font-family: Arial, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8125rem;
+  line-height: 1.3125rem;
+  color: $var2;
+  margin: 0;
+}
+.social-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 9.6875rem;
+}
+.social-networks-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 9.6875rem;
+  min-height: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-footer {
+  flex-shrink: 0;
+}
